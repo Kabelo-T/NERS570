@@ -2,6 +2,7 @@
 /F26/Lec12/
 /F26/Lab4-old/
 /F26/Lab4-matmul/
+/F26/ners570f26-SpMV/
 
 # Build artifacts
 *.o
