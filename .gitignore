@@ -1,0 +1,13 @@
+# Directories that are their own git repositories
+/F26/Lec12/
+/F26/Lab4-old/
+/F26/Lab4-matmul/
+
+# Build artifacts
+*.o
+*.exe
+*.dSYM/
+
+# OS and editor files
+.DS_Store
+.vscode/
