@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[round]{natbib}
+\usepackage{etoolbox}
+\AtBeginEnvironment{thebibliography}{\footnotesize}
+
+\title{\vspace{-2em}NERS570 HW1}
+\author{Kabelo Tsiane}
+\date{September 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Galaxy clusters are the largest gravitationally bound structures in the universe, and are the final output of large-scale structure formation. This makes them an excellent laboratory for studying astrophysical phenomena, such as galaxy formation, magnetohydrodynamics, and exotic dark matter interactions \citep{kravtsov_formation_2012}. On a cosmological scale they are used to track the abundance and distribution of matter to constrain cosmological models \citep{allen_cosmological_2011}.
+
+A key assumption of galaxy clusters in the $\Lambda\mathrm{CDM}$ cosmological model is the notion of self-similarity: the internal structure, dynamics and evolution only differs as a function of mass, and epoch \citep{kravtsov_formation_2012}. As such, measurements of the cluster mass are fundamental to any study with these systems. One of the most robust ways of doing this is through weak gravitational lensing: as light rays in the distant universe stream towards Earth, their paths are deflected by massive objects. These objects can be as small as planets and stars, all the way up to galaxies and galaxy clusters. By measuring the average shearing of distant galaxy images around the galaxy cluster, this allows us to measure the mass \citep{bartelmann_weak_2001,schneider_gravitational_2006}.
+
+\section{Weak-Lensing Mass Measurement}
+
+In the weak-lensing regime, the azimuthally averaged tangential shear $\gamma_t$ at projected radius $R$ from the cluster centre is set by the excess surface mass density \citep[Part~2]{schneider_gravitational_2006}:
+\begin{align}
+  \gamma_t(R) &= \frac{\Delta\Sigma(R)}{\Sigma_\mathrm{crit}}, \label{eq:gt}\\
+  \Delta\Sigma(R) &= \bar{\Sigma}(<R) - \Sigma(R). \label{eq:ds}
+\end{align}
+The critical surface density depends only on geometry,
+\begin{equation}
+  \Sigma_\mathrm{crit} = \frac{c^2}{4\pi G}\,\frac{D_s}{D_l\,D_{ls}}, \label{eq:sigcrit}
+\end{equation}
+where $D_l$, $D_s$ and $D_{ls}$ are the angular diameter distances to the lens, to the source, and between them. Because source redshifts come from photometry, Eq.~\eqref{eq:gt} is evaluated with the source-averaged inverse critical density for each tomographic bin $b$,
+\begin{equation}
+  \left\langle\Sigma_\mathrm{crit}^{-1}\right\rangle_b = \frac{4\pi G}{c^2}\int_{z_l}^{\infty} \mathrm{d}z_s\; n_b(z_s)\,\frac{D_l\,D_{ls}}{D_s}, \label{eq:sigcrit_avg}
+\end{equation}
+with $n_b(z_s)$ the redshift distribution of bin $b$, normalised to unity. Fitting a special density profile for dark matter halos, the NFW profile, to the measured $\Delta\Sigma(R)$ then yields the cluster mass and concentration, for individual clusters or for stacks \citep[e.g.][]{vitorelli_mass_2018}. The accuracy of the result therefore rests on two properties of the source sample: an unbiased shear calibration, and well-characterised $n_b(z_s)$.
+
+\section{Making Source Selection in TXPipe Faster and More Robust}
+
+TXPipe \citep{prat_catalog_2023} is the LSST DESC pipeline that takes shear and photometric catalogs to calibrated two-point measurements; its stages are run in parallel with MPI through \texttt{ceci}. For shear I use the \emph{metadetection} scheme \citep{sheldon_practical_2017,sheldon_mitigating_2020}, in which objects are re-detected and re-measured on images sheared by $\pm\Delta\gamma$ along each axis, giving five catalogs: \texttt{noshear}, \texttt{1p}, \texttt{1m}, \texttt{2p}, \texttt{2m}. The shear estimate is
+\begin{equation}
+  \hat{\gamma}_i = \left(\langle\mathbf{R}\rangle^{-1}\right)_{ij}\langle e_j\rangle,
+  \qquad
+  R_{ij} \simeq \frac{\langle e_i\rangle_{+j} - \langle e_i\rangle_{-j}}{2\,\Delta\gamma}, \label{eq:response}
+\end{equation}
+where $\langle e_i\rangle_{\pm j}$ is the mean ellipticity over the objects that \emph{pass the selection in the catalog sheared by $\pm\Delta\gamma$ in component $j$}. Selection effects are thus folded into $R_{ij}$ automatically, but only if the source selection (cuts on signal-to-noise and size, and the tomographic bin assignment) is applied independently to all five catalogs, for every bin $b$. This is the work done by the \texttt{TXSourceMetadetect} stage, and it is the part of the pipeline I aim to improve.
+
+\textbf{Goals.} \emph{Speed}: for catalogs approaching $10^{9}$ objects, the stage should be limited by I/O bandwidth rather than by repeated reads or serial post-processing. \emph{Robustness}: it should give the same answer for any number of MPI ranks, and handle empty bins, non-finite values, and interrupted runs without silently corrupting Eq.~\eqref{eq:response}. Algorithm~\ref{alg:select} is the design I am implementing: each column chunk is read once for all five catalogs, only small integer counts and sums are reduced across ranks, and empty bins are flagged explicitly. I will verify it by profiling wall time and bytes read, measuring strong scaling with rank count, testing degenerate cases on toy catalogs, and checking that the output matches a reference run.
+
+\begin{algorithm}[t]
+\caption{Chunked source selection with response accumulation}\label{alg:select}
+\small
+\begin{algorithmic}[1]
+\Require catalogs $v\in\{\texttt{noshear},\texttt{1p},\texttt{1m},\texttt{2p},\texttt{2m}\}$; cuts; bin edges
+\State assign each MPI rank a contiguous range of chunks (equal row counts)
+\For{each chunk assigned to this rank}
+  \State read the needed columns ($e_1,e_2$, S/N, size, photo-$z$) once, for all $v$
+  \For{each catalog $v$}
+    \State $m_v \gets \mathrm{isfinite}(\text{all columns}) \text{ and } \text{cuts}$; \quad $b_v \gets \mathrm{digitize}(z_v,\text{edges})$
+    \State write $b_v$ (with $-1$ where \text{ and } $m_v$) to the tomography catalog
+    \For{each bin $b$}
+      \State $N_{b,v} \mathrel{+}= \#\{b_v = b\}$; \quad $\mathbf{S}_{b,v} \mathrel{+}= \sum_{b_v=b}\mathbf{e}$
+    \EndFor
+  \EndFor
+\EndFor
+\State \texttt{Allreduce} all $N_{b,v}$ and $\mathbf{S}_{b,v}$ across ranks
+\State on root: form $\langle e_i\rangle_{\pm j}$ and $R_{ij}$ (Eq.~\ref{eq:response}); flag any bin with $N_{b,v}=0$
+\end{algorithmic}
+\end{algorithm}
+
+{\footnotesize
+\setlength{\bibsep}{2pt}
+\bibliographystyle{plainnat}
+\bibliography{lensing}
+}
+
+\end{document}

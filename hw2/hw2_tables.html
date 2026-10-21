@@ -1,0 +1,20 @@
+<!doctype html><meta charset="utf-8"><title>HW2 tables</title>
+<h3>Memory usage by format (MiB = 2^20 bytes)</h3>
+<table border="1" cellpadding="4" style="border-collapse:collapse">
+<tr><th></th><th>NNC666</th><th>S1RMQ4M1</th><th>IMPCOL_E</th><th>FS_183_1</th><th>LNS_3937</th></tr>
+<tr><th>Dense</th><td>3.38 MiB</td><td>230 MiB</td><td>0.386 MiB</td><td>0.256 MiB</td><td>118 MiB</td></tr>
+<tr><th>COO</th><td>0.0617 MiB</td><td>4.29 MiB</td><td>0.0200 MiB</td><td>0.0163 MiB</td><td>0.388 MiB</td></tr>
+<tr><th>CSR</th><td>0.0488 MiB</td><td>3.24 MiB</td><td>0.0158 MiB</td><td>0.0129 MiB</td><td>0.306 MiB</td></tr>
+<tr><th>ELL</th><td>0.122 MiB</td><td>3.39 MiB</td><td>0.0309 MiB</td><td>0.151 MiB</td><td>0.496 MiB</td></tr>
+<tr><th>JDS</th><td>0.0489 MiB</td><td>3.24 MiB</td><td>0.0159 MiB</td><td>0.0132 MiB</td><td>0.306 MiB</td></tr>
+</table>
+<br>
+<h3>Average time per SpMV (microseconds), nmults = 500, -O2</h3>
+<table border="1" cellpadding="4" style="border-collapse:collapse">
+<tr><th></th><th>NNC666</th><th>S1RMQ4M1</th><th>IMPCOL_E</th><th>FS_183_1</th><th>LNS_3937</th></tr>
+<tr><th>Dense</th><td>198</td><td>14958</td><td>19.4</td><td>35.2</td><td>7633</td></tr>
+<tr><th>COO</th><td>1.77</td><td>246</td><td>0.77</td><td>0.62</td><td>12.7</td></tr>
+<tr><th>CSR</th><td>1.35</td><td>107</td><td>0.54</td><td>0.48</td><td>8.31</td></tr>
+<tr><th>ELL</th><td>3.02</td><td>119</td><td>1.44</td><td>6.40</td><td>13.1</td></tr>
+<tr><th>JDS</th><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
