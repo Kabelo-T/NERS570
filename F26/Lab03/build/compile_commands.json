@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/kabelo/NERS570/F26/Lab03/build",
+  "command": "/usr/bin/cc   -g -o CMakeFiles/Lab03.dir/Lab03.c.o -c /home/kabelo/NERS570/F26/Lab03/Lab03.c",
+  "file": "/home/kabelo/NERS570/F26/Lab03/Lab03.c",
+  "output": "CMakeFiles/Lab03.dir/Lab03.c.o"
+}
+]

@@ -1,0 +1,216 @@
+ 8 x 8 cg
+
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+Norm of error 1.18539e-15 iterations 10
+
+real	0m11.859s
+user	0m0.119s
+sys	0m0.203s
+
+ 32 x 32 cg
+
+  Linear solve converged due to CONVERGED_RTOL iterations 58
+Norm of error 6.04802e-07 iterations 58
+
+real	0m0.423s
+user	0m0.112s
+sys	0m0.190s
+
+ 128 x 128 cg
+
+  Linear solve converged due to CONVERGED_RTOL iterations 218
+Norm of error 8.1102e-06 iterations 218
+
+real	0m0.428s
+user	0m0.151s
+sys	0m0.181s
+
+ 256 x 256 cg
+
+  Linear solve converged due to CONVERGED_RTOL iterations 427
+Norm of error 3.43635e-05 iterations 427
+
+real	0m0.649s
+user	0m0.386s
+sys	0m0.177s
+
+ 512 x 512 cg
+
+  Linear solve converged due to CONVERGED_RTOL iterations 838
+Norm of error 0.000138048 iterations 838
+
+real	0m2.648s
+user	0m2.347s
+sys	0m0.206s
+
+ 1024 x 1024 cg
+
+  Linear solve converged due to CONVERGED_RTOL iterations 1637
+Norm of error 0.000619998 iterations 1637
+
+real	0m23.029s
+user	0m22.292s
+sys	0m0.549s
+
+ 8 x 8 bcgs
+
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+Norm of error 6.75322e-16 iterations 10
+
+real	0m0.369s
+user	0m0.102s
+sys	0m0.175s
+
+ 32 x 32 bcgs
+
+  Linear solve converged due to CONVERGED_RTOL iterations 44
+Norm of error 3.36501e-06 iterations 44
+
+real	0m0.378s
+user	0m0.123s
+sys	0m0.171s
+
+ 128 x 128 bcgs
+
+  Linear solve converged due to CONVERGED_RTOL iterations 168
+Norm of error 0.001158 iterations 168
+
+real	0m0.413s
+user	0m0.162s
+sys	0m0.167s
+
+ 256 x 256 bcgs
+
+  Linear solve converged due to CONVERGED_RTOL iterations 326
+Norm of error 0.00629417 iterations 326
+
+real	0m0.783s
+user	0m0.520s
+sys	0m0.176s
+
+ 512 x 512 bcgs
+
+  Linear solve converged due to CONVERGED_RTOL iterations 603
+Norm of error 0.0499434 iterations 603
+
+real	0m3.689s
+user	0m3.346s
+sys	0m0.232s
+
+ 1024 x 1024 bcgs
+
+  Linear solve converged due to CONVERGED_RTOL iterations 1116
+Norm of error 0.105162 iterations 1116
+
+real	0m31.639s
+user	0m30.779s
+sys	0m0.638s
+
+ 8 x 8 gmres restart = 30
+
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+Norm of error 7.44926e-15 iterations 10
+
+real	0m0.387s
+user	0m0.118s
+sys	0m0.173s
+
+ 32 x 32 gmres restart = 30
+
+  Linear solve converged due to CONVERGED_RTOL iterations 119
+Norm of error 7.85785e-06 iterations 119
+
+real	0m0.384s
+user	0m0.125s
+sys	0m0.173s
+
+ 128 x 128 gmres restart = 30
+
+  Linear solve converged due to CONVERGED_RTOL iterations 1341
+Norm of error 0.00184755 iterations 1341
+
+real	0m0.797s
+user	0m0.522s
+sys	0m0.178s
+
+ 256 x 256 gmres restart = 30
+
+  Linear solve converged due to CONVERGED_RTOL iterations 4501
+Norm of error 0.0105512 iterations 4501
+
+real	0m6.312s
+user	0m5.990s
+sys	0m0.208s
+
+ 512 x 512 gmres restart = 30
+
+  Linear solve did not converge due to DIVERGED_ITS iterations 10000
+Norm of error 1.52766 iterations 10000
+
+real	1m11.058s
+user	1m10.175s
+sys	0m0.488s
+
+ 1024 x 1024 gmres restart = 30
+
+  Linear solve did not converge due to DIVERGED_ITS iterations 10000
+Norm of error 204.188 iterations 10000
+
+real	5m41.039s
+user	5m37.701s
+sys	0m1.820s
+
+ 8 x 8 gmres restart = 200
+
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+Norm of error 7.44926e-15 iterations 10
+
+real	0m0.396s
+user	0m0.124s
+sys	0m0.173s
+
+ 32 x 32 gmres restart = 200
+
+  Linear solve converged due to CONVERGED_RTOL iterations 58
+Norm of error 1.05063e-06 iterations 58
+
+real	0m0.366s
+user	0m0.121s
+sys	0m0.161s
+
+ 128 x 128 gmres restart = 200
+
+  Linear solve converged due to CONVERGED_RTOL iterations 216
+Norm of error 3.78025e-05 iterations 216
+
+real	0m0.674s
+user	0m0.405s
+sys	0m0.182s
+
+ 256 x 256 gmres restart = 200
+
+  Linear solve converged due to CONVERGED_RTOL iterations 753
+Norm of error 0.00336469 iterations 753
+
+real	0m6.518s
+user	0m6.079s
+sys	0m0.325s
+
+ 512 x 512 gmres restart = 200
+
+  Linear solve converged due to CONVERGED_RTOL iterations 2489
+Norm of error 0.0569681 iterations 2489
+
+real	1m32.951s
+user	1m31.028s
+sys	0m1.437s
+
+ 1024 x 1024 gmres restart = 200
+
+  Linear solve converged due to CONVERGED_RTOL iterations 8888
+Norm of error 0.335223 iterations 8888
+
+real	23m32.722s
+user	23m14.892s
+sys	0m12.003s
+

@@ -1,0 +1,360 @@
+ 8 x 8 gmres restart = 10000 pc = gamg
+
+  Linear solve converged due to CONVERGED_RTOL iterations 7
+Iteratively computed extreme singular values: max 1.01343 min 0.704323 max/min 1.43887
+Norm of error 1.00458e-07 iterations 7
+
+real	0m7.793s
+user	0m0.646s
+sys	0m1.459s
+
+ 32 x 32 gmres restart = 10000 pc = gamg
+
+  Linear solve converged due to CONVERGED_RTOL iterations 8
+Iteratively computed extreme singular values: max 1.03168 min 0.595663 max/min 1.73198
+Norm of error 4.4603e-07 iterations 8
+
+real	0m2.179s
+user	0m0.677s
+sys	0m1.399s
+
+ 128 x 128 gmres restart = 10000 pc = gamg
+
+  Linear solve converged due to CONVERGED_RTOL iterations 8
+Iteratively computed extreme singular values: max 1.03721 min 0.490048 max/min 2.11655
+Norm of error 1.16123e-05 iterations 8
+
+real	0m2.248s
+user	0m0.681s
+sys	0m1.471s
+
+ 256 x 256 gmres restart = 10000 pc = gamg
+
+  Linear solve converged due to CONVERGED_RTOL iterations 9
+Iteratively computed extreme singular values: max 1.04558 min 0.419303 max/min 2.49361
+Norm of error 1.64886e-05 iterations 9
+
+real	0m2.410s
+user	0m0.840s
+sys	0m1.471s
+
+ 512 x 512 gmres restart = 10000 pc = gamg
+
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+Iteratively computed extreme singular values: max 1.11731 min 0.340224 max/min 3.28404
+Norm of error 2.21896e-05 iterations 10
+
+real	0m3.188s
+user	0m1.584s
+sys	0m1.502s
+
+ 1024 x 1024 gmres restart = 10000 pc = gamg
+
+  Linear solve converged due to CONVERGED_RTOL iterations 11
+Iteratively computed extreme singular values: max 1.25688 min 0.268215 max/min 4.68608
+Norm of error 7.46802e-05 iterations 11
+
+real	0m7.445s
+user	0m5.289s
+sys	0m1.996s
+
+ 8 x 8 gmres restart = 10000 pc = ilu
+
+  Linear solve converged due to CONVERGED_RTOL iterations 9
+Iteratively computed extreme singular values: max 1.1552 min 0.319391 max/min 3.61689
+Norm of error 3.53688e-07 iterations 9
+
+real	0m2.235s
+user	0m0.678s
+sys	0m1.428s
+
+ 32 x 32 gmres restart = 10000 pc = ilu
+
+  Linear solve converged due to CONVERGED_RTOL iterations 27
+Iteratively computed extreme singular values: max 1.20078 min 0.0302637 max/min 39.6772
+Norm of error 1.67065e-06 iterations 27
+
+real	0m2.235s
+user	0m0.660s
+sys	0m1.448s
+
+ 128 x 128 gmres restart = 10000 pc = ilu
+
+  Linear solve converged due to CONVERGED_RTOL iterations 85
+Iteratively computed extreme singular values: max 1.20634 min 0.00202195 max/min 596.623
+Norm of error 0.000217389 iterations 85
+
+real	0m2.324s
+user	0m0.745s
+sys	0m1.431s
+
+ 256 x 256 gmres restart = 10000 pc = ilu
+
+  Linear solve converged due to CONVERGED_RTOL iterations 142
+Iteratively computed extreme singular values: max 1.20684 min 0.000509991 max/min 2366.39
+Norm of error 0.000429111 iterations 142
+
+real	0m3.313s
+user	0m1.735s
+sys	0m1.467s
+
+ 512 x 512 gmres restart = 10000 pc = ilu
+
+  Linear solve converged due to CONVERGED_RTOL iterations 247
+Iteratively computed extreme singular values: max 1.20702 min 0.000128031 max/min 9427.55
+Norm of error 0.00257167 iterations 247
+
+real	0m15.232s
+user	0m12.937s
+sys	0m2.094s
+
+ 1024 x 1024 gmres restart = 10000 pc = ilu
+
+  Linear solve converged due to CONVERGED_RTOL iterations 476
+Iteratively computed extreme singular values: max 1.20708 min 3.20725e-05 max/min 37636.1
+Norm of error 0.00261812 iterations 476
+
+real	3m11.847s
+user	3m4.262s
+sys	0m6.247s
+
+ 8 x 8 gmres restart = 10000 pc = icc
+
+  Linear solve converged due to CONVERGED_RTOL iterations 9
+Iteratively computed extreme singular values: max 1.1552 min 0.319391 max/min 3.61689
+Norm of error 3.53688e-07 iterations 9
+
+real	0m2.321s
+user	0m0.719s
+sys	0m1.478s
+
+ 32 x 32 gmres restart = 10000 pc = icc
+
+  Linear solve converged due to CONVERGED_RTOL iterations 27
+Iteratively computed extreme singular values: max 1.20078 min 0.0302637 max/min 39.6772
+Norm of error 1.67065e-06 iterations 27
+
+real	0m2.257s
+user	0m0.688s
+sys	0m1.456s
+
+ 128 x 128 gmres restart = 10000 pc = icc
+
+  Linear solve converged due to CONVERGED_RTOL iterations 85
+Iteratively computed extreme singular values: max 1.20634 min 0.00202195 max/min 596.623
+Norm of error 0.000217389 iterations 85
+
+real	0m2.397s
+user	0m0.756s
+sys	0m1.518s
+
+ 256 x 256 gmres restart = 10000 pc = icc
+
+  Linear solve converged due to CONVERGED_RTOL iterations 142
+Iteratively computed extreme singular values: max 1.20684 min 0.000509991 max/min 2366.39
+Norm of error 0.000429111 iterations 142
+
+real	0m3.488s
+user	0m1.813s
+sys	0m1.546s
+
+ 512 x 512 gmres restart = 10000 pc = icc
+
+  Linear solve converged due to CONVERGED_RTOL iterations 247
+Iteratively computed extreme singular values: max 1.20702 min 0.000128031 max/min 9427.55
+Norm of error 0.00257167 iterations 247
+
+real	0m15.707s
+user	0m13.328s
+sys	0m2.160s
+
+ 1024 x 1024 gmres restart = 10000 pc = icc
+
+  Linear solve converged due to CONVERGED_RTOL iterations 476
+Iteratively computed extreme singular values: max 1.20708 min 3.20725e-05 max/min 37636.1
+Norm of error 0.00261812 iterations 476
+
+real	3m15.654s
+user	3m7.768s
+sys	0m6.390s
+
+ 8 x 8 gmres restart = 10000 pc = sor
+
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+Iteratively computed extreme singular values: max 1.00089 min 0.205789 max/min 4.8637
+Norm of error 2.15346e-07 iterations 10
+
+real	0m2.343s
+user	0m0.689s
+sys	0m1.535s
+
+ 32 x 32 gmres restart = 10000 pc = sor
+
+  Linear solve converged due to CONVERGED_RTOL iterations 32
+Iteratively computed extreme singular values: max 1.00043 min 0.0178737 max/min 55.9722
+Norm of error 2.60518e-06 iterations 32
+
+real	0m2.312s
+user	0m0.690s
+sys	0m1.519s
+
+ 128 x 128 gmres restart = 10000 pc = sor
+
+  Linear solve converged due to CONVERGED_RTOL iterations 100
+Iteratively computed extreme singular values: max 1.0002 min 0.00118507 max/min 843.996
+Norm of error 0.000186648 iterations 100
+
+real	0m2.466s
+user	0m0.864s
+sys	0m1.475s
+
+ 256 x 256 gmres restart = 10000 pc = sor
+
+  Linear solve converged due to CONVERGED_RTOL iterations 166
+Iteratively computed extreme singular values: max 1.00012 min 0.000298787 max/min 3347.29
+Norm of error 0.00105523 iterations 166
+
+real	0m4.006s
+user	0m2.231s
+sys	0m1.611s
+
+ 512 x 512 gmres restart = 10000 pc = sor
+
+  Linear solve converged due to CONVERGED_RTOL iterations 291
+Iteratively computed extreme singular values: max 1.00009 min 7.50014e-05 max/min 13334.3
+Norm of error 0.00157889 iterations 291
+
+real	0m20.940s
+user	0m18.469s
+sys	0m2.226s
+
+ 1024 x 1024 gmres restart = 10000 pc = sor
+
+  Linear solve converged due to CONVERGED_RTOL iterations 560
+Iteratively computed extreme singular values: max 1.00007 min 1.87878e-05 max/min 53229.7
+Norm of error 0.00324869 iterations 560
+
+real	4m31.479s
+user	4m21.848s
+sys	0m7.668s
+
+ 8 x 8 gmres restart = 10000 pc = jacobi
+
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+Iteratively computed extreme singular values: max 1.76604 min 0.0603074 max/min 29.2841
+Norm of error 7.44926e-15 iterations 10
+
+real	0m2.276s
+user	0m0.644s
+sys	0m1.490s
+
+ 32 x 32 gmres restart = 10000 pc = jacobi
+
+  Linear solve converged due to CONVERGED_RTOL iterations 58
+Iteratively computed extreme singular values: max 1.98193 min 0.00452808 max/min 437.698
+Norm of error 1.05063e-06 iterations 58
+
+real	0m2.227s
+user	0m0.664s
+sys	0m1.466s
+
+ 128 x 128 gmres restart = 10000 pc = jacobi
+
+  Linear solve converged due to CONVERGED_RTOL iterations 214
+Iteratively computed extreme singular values: max 1.99881 min 0.00029653 max/min 6740.68
+Norm of error 2.70188e-05 iterations 214
+
+real	0m2.655s
+user	0m1.061s
+sys	0m1.479s
+
+ 256 x 256 gmres restart = 10000 pc = jacobi
+
+  Linear solve converged due to CONVERGED_RTOL iterations 415
+Iteratively computed extreme singular values: max 1.9997 min 7.47133e-05 max/min 26765.
+Norm of error 0.000170474 iterations 415
+
+real	0m10.381s
+user	0m8.477s
+sys	0m1.763s
+
+ 512 x 512 gmres restart = 10000 pc = jacobi
+
+  Linear solve converged due to CONVERGED_RTOL iterations 801
+Iteratively computed extreme singular values: max 1.99992 min 1.87514e-05 max/min 106655.
+Norm of error 0.00107524 iterations 801
+
+real	1m56.689s
+user	1m52.146s
+sys	0m3.795s
+
+ 1024 x 1024 gmres restart = 10000 pc = jacobi
+
+  Linear solve converged due to CONVERGED_RTOL iterations 1543
+Iteratively computed extreme singular values: max 1.99998 min 4.69701e-06 max/min 425798.
+Norm of error 0.00625212 iterations 1543
+
+real	30m9.948s
+user	29m3.685s
+sys	0m57.972s
+
+ 8 x 8 gmres restart = 10000 pc = none
+
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+Iteratively computed extreme singular values: max 7.06418 min 0.24123 max/min 29.2841
+Norm of error 7.44926e-15 iterations 10
+
+real	0m9.089s
+user	0m0.654s
+sys	0m1.452s
+
+ 32 x 32 gmres restart = 10000 pc = none
+
+  Linear solve converged due to CONVERGED_RTOL iterations 58
+Iteratively computed extreme singular values: max 7.92771 min 0.0181123 max/min 437.698
+Norm of error 1.05063e-06 iterations 58
+
+real	0m2.164s
+user	0m0.665s
+sys	0m1.423s
+
+ 128 x 128 gmres restart = 10000 pc = none
+
+  Linear solve converged due to CONVERGED_RTOL iterations 214
+Iteratively computed extreme singular values: max 7.99526 min 0.00118612 max/min 6740.68
+Norm of error 2.70188e-05 iterations 214
+
+real	0m2.572s
+user	0m1.044s
+sys	0m1.448s
+
+ 256 x 256 gmres restart = 10000 pc = none
+
+  Linear solve converged due to CONVERGED_RTOL iterations 415
+Iteratively computed extreme singular values: max 7.9988 min 0.000298853 max/min 26765.
+Norm of error 0.000170474 iterations 415
+
+real	0m9.855s
+user	0m8.001s
+sys	0m1.734s
+
+ 512 x 512 gmres restart = 10000 pc = none
+
+  Linear solve converged due to CONVERGED_RTOL iterations 801
+Iteratively computed extreme singular values: max 7.9997 min 7.50056e-05 max/min 106655.
+Norm of error 0.00107524 iterations 801
+
+real	1m53.733s
+user	1m49.250s
+sys	0m3.897s
+
+ 1024 x 1024 gmres restart = 10000 pc = none
+
+  Linear solve converged due to CONVERGED_RTOL iterations 1543
+Iteratively computed extreme singular values: max 7.99992 min 1.87881e-05 max/min 425798.
+Norm of error 0.00625212 iterations 1543
+
+real	30m6.201s
+user	29m1.024s
+sys	0m57.617s
+

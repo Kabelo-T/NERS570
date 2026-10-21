@@ -1,0 +1,152 @@
+gl3049.arc-ts.umich.edu
+HYDRA_LAUNCHER_EXTRA_ARGS=--external-launcher
+CONDA_SHLVL=1
+SLURM_MEM_PER_CPU=1000
+LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+CONDA_EXE=/sw/pkgs/arc/python3.11-anaconda/2024.02-1/bin/conda
+SLURM_NODEID=0
+SLURM_TASK_PID=650519
+_ModuleTable002_=L3N3L21vZHVsZXMvQ29sbGVjdGlvbnMiLAp9Cg==
+HTTP_PROXY=http://proxy1.arc-ts.umich.edu:3128/
+SSH_CONNECTION=35.3.101.3 55283 141.211.192.50 22
+SLURM_PRIO_PROCESS=0
+I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS=--external-launcher
+LANG=en_US.UTF-8
+SLURM_SUBMIT_DIR=/home/kabelo/NERS570/F26/Lab03
+HISTCONTROL=ignoredups
+OMPI_MCA_plm_slurm_args=--external-launcher
+HOSTNAME=gl3049.arc-ts.umich.edu
+OLDPWD=/home/kabelo
+SLURM_CPUS_PER_TASK=1
+ENVIRONMENT=BATCH
+GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+CONDA_PREFIX=/sw/pkgs/arc/python3.11-anaconda/2024.02-1
+SQUEUE_FORMAT=%.18i %.9P %.8j %.8u %.8a %.2t %.10M %.6D %R
+SLURM_PROCID=0
+SLURM_JOB_GID=114408971
+I_MPI_HYDRA_BOOTSTRAP=slurm
+SLURMD_NODENAME=gl3049
+SLURM_JOB_END_TIME=1789742768
+SLURM_TASKS_PER_NODE=1
+S_COLORS=auto
+PRTE_MCA_plm_slurm_args=--external-launcher
+_CE_M=
+which_declare=declare -f
+XDG_SESSION_ID=22680
+SLURM_NNODES=1
+USER=kabelo
+GOPATH=/home/kabelo/go
+SLURM_JOB_START_TIME=1789742468
+SLURM_NTASKS_PER_NODE=1
+__LMOD_REF_COUNT_MODULEPATH=/sw/spack/arc/modules/linux-rhel8-x86_64/gcc/8.5.0:1;/sw/spack/arc/modules/linux-rhel8-x86_64/gcc/10.3.0:1;/sw/lmod/lmod/modulefiles/Core:1;/sw/modules/Core:1;/sw/modules/Collections:1
+FTP_PROXY=http://proxy1.arc-ts.umich.edu:3128/
+PWD=/home/kabelo/NERS570/F26/Lab03
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SLURM_JOB_NODELIST=gl3049
+HOME=/home/kabelo
+GOROOT=/home/kabelo/go-sdk
+SLURM_CLUSTER_NAME=greatlakes
+CONDA_PYTHON_EXE=/sw/pkgs/arc/python3.11-anaconda/2024.02-1/bin/python
+SLURM_NODELIST=gl3049
+SSH_CLIENT=35.3.101.3 55283 22
+LMOD_VERSION=8.6.14
+SLURM_NTASKS=1
+rsync_proxy=proxy1.arc-ts.umich.edu:3128
+https_proxy=http://proxy1.arc-ts.umich.edu:3128/
+KRB5CCNAME=FILE:/tmp/krb5cc_114408971_hYtaSm
+SLURM_JOB_CPUS_PER_NODE=1
+BASH_ENV=/sw/lmod/lmod/init/bash
+XDG_DATA_DIRS=/home/kabelo/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+AUTOJUMP_ERROR_PATH=/home/kabelo/.local/share/autojump/errors.log
+SLURM_TOPOLOGY_ADDR=gl3049
+http_proxy=http://proxy1.arc-ts.umich.edu:3128/
+_CE_CONDA=
+GSETTINGS_SCHEMA_DIR=/sw/pkgs/arc/python3.11-anaconda/2024.02-1/share/glib-2.0/schemas
+SLURM_JOB_NAME=example_job
+TMPDIR=/tmp
+LMOD_sys=Linux
+SLURM_JOBID=61476512
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9zdy9zcGFjay9hcmMvbW9kdWxlcy9saW51eC1yaGVsOC14ODZfNjQvZ2NjLzguNS4wIiwgIi9zdy9zcGFjay9hcmMvbW9kdWxlcy9saW51eC1yaGVsOC14ODZfNjQvZ2NjLzEwLjMuMCIKLCAiL3N3L2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwgIi9zdy9tb2R1bGVzL0NvcmUiLCAiL3N3L21vZHVsZXMvQ29sbGVjdGlvbnMiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL3N3L2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlOi9zdy9tb2R1bGVzL0NvcmU6
+SLURM_CONF=/var/spool/slurmd.spool/conf-cache/slurm.conf
+LMOD_AVAIL_STYLE=grouped
+no_proxy=localhost,127.0.0.1,.localdomain,.umich.edu,ime240-4-1-hs
+SLURM_JOB_QOS=class
+LMOD_ROOT=/sw/lmod
+SLURM_TOPOLOGY_ADDR_PATTERN=node
+CONDA_PROMPT_MODIFIER=(base) 
+SSH_TTY=/dev/pts/121
+NO_PROXY=localhost,127.0.0.1,.localdomain,.umich.edu,ime240-4-1-hs
+MAIL=/var/spool/mail/kabelo
+HTTPS_PROXY=http://proxy1.arc-ts.umich.edu:3128/
+SLURM_CPUS_ON_NODE=1
+SLURM_JOB_NUM_NODES=1
+AUTOJUMP_SOURCED=1
+SHELL=/bin/bash
+TERM=xterm-256color
+SLURM_JOB_UID=114408971
+_ModuleTable_Sz_=2
+SLURM_JOB_PARTITION=debug
+SLURM_SCRIPT_CONTEXT=prolog_task
+SLURM_JOB_USER=kabelo
+SLURM_NPROCS=1
+SHLVL=2
+SLURM_SUBMIT_HOST=gl-login5.arc-ts.umich.edu
+SLURM_JOB_ACCOUNT=ners570f26_class
+MANPATH=/sw/lmod/lmod/share/man:/opt/TurboVNC/man:/usr/local/share/man:/usr/share/man:/opt/dell/srvadmin/share/man:/opt/TurboVNC/man/
+SLURM_TRES_PER_TASK=cpu=1
+HYDRA_BOOTSTRAP=slurm
+MODULEPATH=/sw/spack/arc/modules/linux-rhel8-x86_64/gcc/8.5.0:/sw/spack/arc/modules/linux-rhel8-x86_64/gcc/10.3.0:/sw/lmod/lmod/modulefiles/Core:/sw/modules/Core:/sw/modules/Collections
+SLURM_GTIDS=0
+LOGNAME=kabelo
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/114408971/bus
+XDG_RUNTIME_DIR=/run/user/114408971
+MODULEPATH_ROOT=/sw/modules
+LMOD_PACKAGE_PATH=/sw/lmod
+PATH=/sw/pkgs/arc/python3.11-anaconda/2024.02-1/bin:/sw/pkgs/arc/python3.11-anaconda/2024.02-1/condabin:/home/kabelo/.local/bin:/home/kabelo/bin:/opt/TurboVNC/bin:/sw/pkgs/arc/usertools/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/dell/srvadmin/sbin:/usr/lpp/mmfs/bin:/opt/dell/srvadmin/sbin:/home/kabelo/go-sdk/bin:/home/kabelo/go/bin
+SLURM_JOB_ID=61476512
+MODULESHOME=/sw/lmod/lmod
+LMOD_SETTARG_FULL_SUPPORT=no
+CONDA_DEFAULT_ENV=base
+HISTSIZE=1000
+LMOD_PKG=/sw/lmod/lmod
+CLUSTER_NAME=greatlakes
+ftp_proxy=http://proxy1.arc-ts.umich.edu:3128/
+RSYNC_PROXY=proxy1.arc-ts.umich.edu:3128
+SLURM_OOM_KILL_STEP=0
+LMOD_CMD=/sw/lmod/lmod/libexec/lmod
+SLURM_LOCALID=0
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LMOD_DIR=/sw/lmod/lmod/libexec
+BASH_FUNC_which%%=() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}
+BASH_FUNC_module%%=() {  local __lmod_my_status;
+ local __lmod_sh_dbg;
+ if [ -z "${LMOD_SH_DBG_ON+x}" ]; then
+ case "$-" in 
+ *v*x*)
+ __lmod_sh_dbg='vx'
+ ;;
+ *v*)
+ __lmod_sh_dbg='v'
+ ;;
+ *x*)
+ __lmod_sh_dbg='x'
+ ;;
+ esac;
+ fi;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ set +$__lmod_sh_dbg;
+ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;
+ fi;
+ eval "$($LMOD_CMD bash "$@")" && eval $(${LMOD_SETTARG_CMD:-:} -s sh);
+ __lmod_my_status=$?;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ echo "Shell debugging restarted" 1>&2;
+ set -$__lmod_sh_dbg;
+ fi;
+ return $__lmod_my_status
+}
+BASH_FUNC_ml%%=() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+}
+_=/usr/bin/printenv

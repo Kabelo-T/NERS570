@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLab03.a CMakeFiles/Lab03.dir/Lab03.c.o
+/usr/bin/ranlib libLab03.a
